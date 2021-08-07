@@ -1,5 +1,5 @@
 # Project
-# microservices
+# Microservices for pixogram
 # 1.service-registry
 # 2.cloud-config-server
 # 3.cloud-gateway

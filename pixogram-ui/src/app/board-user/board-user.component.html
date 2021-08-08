@@ -1,14 +1,25 @@
-
 <div class="container">
-  <header class="jumbotron">
-    <p>Welcome 
-      {{ currentUser.username }}
- to pixogram {{ content }}</p>
-  </header>
-    <mat-tab-group>
-    <mat-tab label="Upload Media"> Upload Media
-       </mat-tab>
-    <mat-tab label="My Media"> My Media List </mat-tab>
-  </mat-tab-group>
-</div>
 
+  <header class="jumbotron">
+    <p>Welcome
+   
+      to pixogram {{ content }}</p>
+  </header>
+
+  <div class="card">
+    <div class="card-header">{{mediaContent}}Hi <!-- {{ currentUser.username }}--> , you can view and upload your media here.
+    </div>
+    <h4>
+      <mat-tab-group>
+        <mat-tab label="Upload Media">
+          <app-upload-files></app-upload-files>
+        </mat-tab>
+        <mat-tab label="My Media">
+          <label class="btn btn-default">
+            My Media List
+          </label>
+ </mat-tab>
+      </mat-tab-group>
+    </h4>
+  </div>
+</div>

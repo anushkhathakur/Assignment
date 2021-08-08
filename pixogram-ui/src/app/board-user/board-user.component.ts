@@ -8,6 +8,7 @@ import { TokenStorageService } from '../_services/token-storage.service';
 })
 export class BoardUserComponent implements OnInit {
   content = '';
+  mediaContent=''
   currentUser: any;
   constructor(private userService: UserService,private token: TokenStorageService) { }
 
@@ -16,10 +17,12 @@ export class BoardUserComponent implements OnInit {
       data => {
         this.content = data;
         this.currentUser = this.token.getUser();
+        this.mediaContent="welcome here..";
       },
       err => {
         this.content = JSON.parse(err.error).message;
       }
     );
   }
+  
 }

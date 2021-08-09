@@ -1,0 +1,108 @@
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWNhMTEwZTUtYTE1My00OWJhLWI0YzgtMmYwNTJmZWYxNTAw%40thread.v2/0?context=%7b%22Tid%22%3a%22ee42efc6-719b-4507-8faa-df711053ce24%22%2c%22Oid%22%3a%22883d8453-37c2-4262-a9ae-00ec3ce40247%22%7d
+
+
+Cloud Lab – URL: https://vs.iiht.tech 
+CloudLab Credentials
+UserName:ibmjfsdaws04
+Password : pass@word1
+EmpId:000A6R744
+EmailId:anushth1@in.ibm.com
+(please write to labsupport@iiht.com in case of any challenges on cloud labs)
+
+Techademy – URL: https://techademy.in/ibmfsd 
+Username: anushth1@in.ibm.com
+Password: dfbab83187474804
+
+//box setup link
+https://ibm.ent.box.com/folder/71415356541
+https://ibm.ent.box.com/file/111840012430
+https://ibm.ent.box.com/file/704255852322
+
+slack
+https://app.slack.com/client/T7A458339/DFJR5DDMK
+
+angular
+https://www.youtube.com/watch?v=9TG6nOPJJ3Y
+
+https://loizenai.com/angular-8-springboot-jwt-authentication/
+
+http://localhost:4200/home
+ "baseUrl": "./",
+
+
+export class JwtResponse {
+    accessToken: string;
+    type: string;
+    username: string;
+    authorities: string[];
+}
+mvn spring-boot:run
+
+http://localhost:9001/h2/
+MySQL
+1.	Go to mysql client terminal
+2.	Enter password : pass@123
+3.	Command : create database pixogram;
+4.	Command : show databases;
+5.	Command : use pixogram;
+6.	Command to delete database : drop database dbName;
+
+spring.datasource.url=jdbc:mysql://localhost:3306/pixogram
+spring.datasource.username=root
+spring.datasource.password=pass@123
+spring.jpa.generate-ddl=true
+
+Command :  CREATE TABLE roles (id bigint(11) primary key AUTO_INCREMENT
+, name varchar(60) );
+
+Command : CREATE TABLE user_roles (user_id bigint(20) primary key, role_id bigint(20) );
+Command : CREATE TABLE users (id bigint(20) primary key AUTO_INCREMENT
+, email varchar(50) UNIQUE, name varchar(50), password varchar(100) , username varchar(50) UNIQUE);
+
+Command : show tables;
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_PM');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+
+//Media service
+CREATE TABLE media (media_id bigint(11) primary key AUTO_INCREMENT
+, user_id  bigint(11)
+, media_url varchar(60)
+, mime_type varchar(60)
+, media_title varchar(60)
+, media_caption varchar(60)
+, date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+, hide boolean
+, name varchar(60)
+);
+
+
+//Media service
+CREATE TABLE media (mediaId bigint(11) primary key AUTO_INCREMENT
+, userId  bigint(11)
+, mediaUrl varchar(60)
+, mimeType varchar(60)
+, mediaTitle varchar(60)
+, mediaCaption varchar(60)
+, date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+, hide boolean
+, name varchar(60)
+);
+
+h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+	
+	
+    
+
+
+
+
+

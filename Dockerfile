@@ -1,8 +1,5 @@
-FROM java:8-jre
-WORKDIR usr/src/
-
-# My SQL Property need to set in Docker Compose file
-
-ADD ./target/userservice-1.0.jar /usr/src/userservice-1.0.jar
-ENTRYPOINT ["java","-jar","userservice-1.0.jar"]
+FROM openjdk:8
+ADD ./target/docker-service-registry.jar docker-service-registry.jar
+EXPOSE 8761
+ENTRYPOINT ["java","-jar","docker-service-registry.jar"]
 
